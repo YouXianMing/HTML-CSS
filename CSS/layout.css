@@ -1,0 +1,180 @@
+/*--------------------------------------------------
+  ----------------       all       -----------------
+  --------------------------------------------------*/
+
+
+/** 所有元素的inline-block模式,超出隐藏,顶部对齐 **/
+
+*.i-b-t {
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+
+/** 清楚浮动效果
+    (伪类的用法)http://www.cnblogs.com/ghost-xyx/p/3763669.html
+    (伪类的用法)http://blog.dimpurr.com/css-before-after/ **/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+
+/** 静态定位 **/
+
+.static {
+    position: static;
+}
+
+
+/** 相对定位 **/
+
+.relative {
+    position: relative;
+}
+
+
+/** 绝对定位 **/
+
+.absolute {
+    position: absolute;
+}
+
+
+/** 固定定位 **/
+
+.fixed {
+    position: fixed;
+}
+
+
+/*--------------------------------------------------
+  ----------------        p        -----------------
+  --------------------------------------------------*/
+
+
+/** 所有p元素的单行nowrap模式,尺寸由具体的类或ID设置 **/
+
+p.one_nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/** 所有p元素的多行nowrap模式,尺寸由具体的类或ID设置
+    注意: -webkit-line-clamp: 数字; 由其他类或ID来设置行数
+    细节: http://jingyan.baidu.com/article/15622f24017061fdfdbea558.html **/
+
+p.more_nowrap {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    /** 对象作为伸缩盒子模型显示 **/
+    display: -webkit-box;
+    /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-box-orient: vertical;
+    /** 隐藏超出的内容 **/
+    overflow: hidden;
+}
+
+
+/*--------------------------------------------------
+  ----------------       div       -----------------
+  --------------------------------------------------*/
+
+
+/** div向左浮动 **/
+
+div.float-left {
+    float: left;
+}
+
+
+/** div向右浮动 **/
+
+div.float-right {
+    float: right;
+}
+
+
+/** div清除左浮动 **/
+
+div.clear-left {
+    clear: left;
+}
+
+
+/** div清除右浮动 **/
+
+div.clear-right {
+    clear: right;
+}
+
+
+/** div清除左右浮动 **/
+
+div.clear {
+    clear: both;
+}
+
+
+/*--------------------------------------------------
+  ----------------      DEBUG      -----------------
+  --------------------------------------------------*/
+
+
+/** 设置并显示所有元素的outline **/
+
+html.all-outline * {
+    outline: dashed RGBA(255, 0, 0, 1.0) thin !important;
+}
+
+
+/** 设置并显示所有div元素的outline **/
+
+html.div-outline div {
+    outline: dashed RGBA(255, 0, 0, 1.0) thin !important;
+}
+
+
+/** 设置并显示所有p元素的outline **/
+
+html.p-outline p {
+    outline: dashed RGBA(255, 0, 0, 1.0) thin !important;
+}
+
+
+/** 设置并显示所有元素的背景色以及文本颜色 **/
+
+html.all-color * {
+    background-color: RGBA(255, 0, 0, 0.1) !important;
+    color: RGBA(74, 242, 161, 1.00) !important;
+}
+
+
+/** 设置并显示所有div元素的背景色以及文本颜色 **/
+
+html.div-color div {
+    background-color: RGBA(255, 0, 0, 0.1) !important;
+    color: RGBA(74, 242, 161, 1.00) !important;
+}
+
+
+/** 设置并清除所有元素的背景色 **/
+
+html.all-background-color-clear * {
+    background-color: RGBA(255, 0, 0, 0.0) !important;
+}
+
+
+/** 显示指定元素outline以及其背景色 **/
+
+html .outline {
+    background-color: RGBA(255, 0, 0, 0.1) !important;
+    outline: dashed RGBA(255, 0, 0, 1.0) thin !important;
+}
