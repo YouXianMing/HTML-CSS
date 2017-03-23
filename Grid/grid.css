@@ -1,0 +1,17 @@
+body {
+    margin: 0px;
+    padding: 20px 0px;
+}
+
+div.w150_h250 {
+    width: 150px;
+    height: 250px;
+}
+
+div.w900 {
+    width: 900px;
+}
+
+div.center {
+    margin: auto;
+}
