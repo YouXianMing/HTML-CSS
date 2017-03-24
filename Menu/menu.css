@@ -1,0 +1,81 @@
+/* list-1 */
+
+
+/*设定本例中菜单的大小和位置*/
+
+div.size-1 {
+    margin: 50px;
+    width: 150px;
+}
+
+
+/*给菜单加上边框*/
+
+.list-1 ul {
+    border: 1px solid #f00;
+    border-radius: 5px;
+    padding: 5px 10px 3px;
+}
+
+
+/*去掉项目符号并为链接添加间距*/
+
+.list-1 li {
+    padding: 3px 10px;
+}
+
+
+/*“非首位子元素”选择符*/
+
+.list-1 li+li {
+    border-top: 1px solid #f00;
+}
+
+
+/*为链接添加样式*/
+
+.list-1 a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
+
+/*悬停高亮*/
+
+.list-1 a:hover {
+    color: red;
+}
+
+
+/* list-2 */
+
+.list-2 ul {
+    /*强制 ul 包围浮动的 li 元素*/
+    overflow: hidden;
+}
+
+.list-2 li {
+    /*让 li 元素水平排列*/
+    float: left;
+    /*去掉项目符号*/
+    list-style-type: none;
+}
+
+.list-2 a {
+    /*让链接填满 li 元素*/
+    display: block;
+    padding: 4px 16px;
+    /*去掉链接的下划线*/
+    text-decoration: none;
+    color: #999;
+}
+
+.list-2 li+li a {
+    border-left: 1px solid #aaa;
+}
+
+.list-2 a:hover {
+    color: #555;
+}
