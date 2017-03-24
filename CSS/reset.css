@@ -39,7 +39,7 @@ button,
 input,
 select,
 textarea {
-    font: 12px/1.5, tahoma, Srial, helvetica, sans-serif;
+    font: 100%, helvetica, arial, sans-serif;
 }
 
 h1,

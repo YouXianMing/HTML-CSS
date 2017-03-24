@@ -131,37 +131,37 @@ div.clear {
 /** 设置并显示所有元素的outline **/
 
 html.all-outline * {
-    outline: dashed RGBA(255, 0, 0, 1.0) thin !important;
+    outline: dashed RGBA(201, 117, 134, 1.00) thin !important;
 }
 
 
 /** 设置并显示所有div元素的outline **/
 
 html.div-outline div {
-    outline: dashed RGBA(255, 0, 0, 1.0) thin !important;
+    outline: dashed RGBA(201, 117, 134, 1.00) thin !important;
 }
 
 
 /** 设置并显示所有p元素的outline **/
 
 html.p-outline p {
-    outline: dashed RGBA(255, 0, 0, 1.0) thin !important;
+    outline: dashed RGBA(201, 117, 134, 1.00) thin !important;
 }
 
 
 /** 设置并显示所有元素的背景色以及文本颜色 **/
 
 html.all-color * {
-    background-color: RGBA(255, 0, 0, 0.1) !important;
-    color: RGBA(74, 242, 161, 1.00) !important;
+    background-color: RGBA(77, 67, 152, 0.1) !important;
+    color: RGBA(0, 163, 175, 1.00) !important;
 }
 
 
 /** 设置并显示所有div元素的背景色以及文本颜色 **/
 
 html.div-color div {
-    background-color: RGBA(255, 0, 0, 0.1) !important;
-    color: RGBA(74, 242, 161, 1.00) !important;
+    background-color: RGBA(77, 67, 152, 0.1) !important;
+    color: RGBA(180, 134, 107, 1.00) !important;
 }
 
 
@@ -169,12 +169,4 @@ html.div-color div {
 
 html.all-background-color-clear * {
     background-color: RGBA(255, 0, 0, 0.0) !important;
-}
-
-
-/** 显示指定元素outline以及其背景色 **/
-
-html .outline {
-    background-color: RGBA(255, 0, 0, 0.1) !important;
-    outline: dashed RGBA(255, 0, 0, 1.0) thin !important;
 }

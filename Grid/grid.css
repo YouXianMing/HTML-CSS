@@ -1,6 +1,8 @@
 body {
     margin: 0px;
     padding: 20px 0px;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1.4rem;
 }
 
 div.w150_h250 {
