@@ -1,0 +1,62 @@
+div#content {
+    padding: 60px 0 0 0;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+div#image {
+    height: inherit;
+    background-image: url(../images/4.jpg);
+    background-size: cover;
+}
+
+div.scroll-page {
+    height: 40px;
+    width: inherit;
+    position: absolute;
+    bottom: 0px;
+}
+
+div.scroll-page>ol.num {
+    height: 30px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+div.scroll-page>ol.num>li {
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    border-left-color: RGBA(255, 255, 255, 0.75);
+    border-left-style: solid;
+    border-left-width: thin;
+}
+
+div.scroll-page>ol.bg {
+    height: 40px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+div.scroll-page>ol.bg>li {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    background-image: url(../images/red-bg.png);
+}
+
+div.scroll-page>div.scroll-bg {
+    height: 30px;
+    width: inherit;
+    position: absolute;
+    bottom: 0px;
+    background-color: RGBA(0, 0, 0, 0.5);
+}

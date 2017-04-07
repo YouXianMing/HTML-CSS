@@ -1,0 +1,207 @@
+/*--------------------------------------------------
+  ----------------       all       -----------------
+  --------------------------------------------------*/
+
+
+/** 清除浮动效果
+    (伪类的用法)http://www.cnblogs.com/ghost-xyx/p/3763669.html
+    (伪类的用法)http://blog.dimpurr.com/css-before-after/ **/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+
+/** 静态定位 **/
+
+.static {
+    position: static;
+}
+
+
+/** 相对定位 **/
+
+.relative {
+    position: relative;
+}
+
+
+/** 绝对定位 **/
+
+.absolute {
+    position: absolute;
+}
+
+
+/** 固定定位 **/
+
+.fixed {
+    position: fixed;
+}
+
+
+/** 向左浮动 **/
+
+.float-left {
+    float: left;
+}
+
+
+/** 向右浮动 **/
+
+.float-right {
+    float: right;
+}
+
+
+/** 清除左浮动 **/
+
+.clear-left {
+    clear: left;
+}
+
+
+/** 清除右浮动 **/
+
+.clear-right {
+    clear: right;
+}
+
+
+/** 清除左右浮动 **/
+
+.clear {
+    clear: both;
+}
+
+
+/** 显示为块 **/
+
+.block {
+    display: block;
+}
+
+
+/** 显示为行 **/
+
+.inline {
+    display: inline;
+}
+
+
+/** 显示为行块 **/
+
+.inline-block {
+    display: inline-block;
+}
+
+
+/** 显示为table **/
+
+.table {
+    display: table;
+}
+
+
+/** 显示为table-cell **/
+
+.table-cell {
+    display: table-cell;
+}
+
+
+/** 继承高度 **/
+
+.inherit-height {
+    height: inherit;
+}
+
+
+/** 继承宽度 **/
+
+.inherit-width {
+    width: inherit;
+}
+
+
+/*--------------------------------------------------
+  ----------------        p        -----------------
+  --------------------------------------------------*/
+
+
+/** 所有p元素的单行nowrap模式,尺寸由具体的类或ID设置 **/
+
+p.one-nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/** 所有p元素的多行nowrap模式,尺寸由具体的类或ID设置
+    注意: -webkit-line-clamp: 数字; 由其他类或ID来设置行数
+    细节: http://jingyan.baidu.com/article/15622f24017061fdfdbea558.html **/
+
+p.more-nowrap {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    /** 对象作为伸缩盒子模型显示 **/
+    display: -webkit-box;
+    /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-box-orient: vertical;
+    /** 隐藏超出的内容 **/
+    overflow: hidden;
+}
+
+
+/*--------------------------------------------------
+  ----------------      DEBUG      -----------------
+  --------------------------------------------------*/
+
+
+/** 设置并显示所有元素的outline **/
+
+html.outline * {
+    outline: dashed RGBA(201, 117, 134, 0.2) thin !important;
+}
+
+
+/** 设置并显示所有div元素的outline **/
+
+html.div-outline div {
+    outline: dashed RGBA(201, 117, 134, 0.2) thin !important;
+}
+
+
+/** 设置并显示所有p元素的outline **/
+
+html.p-outline p {
+    outline: dashed RGBA(201, 117, 134, 0.2) thin !important;
+}
+
+
+/** 设置并显示所有元素的背景色以及文本颜色 **/
+
+html.color * {
+    background-color: RGBA(77, 67, 152, 0.1) !important;
+    color: RGBA(0, 163, 175, 1.00) !important;
+}
+
+
+/** 设置并显示所有div元素的背景色以及文本颜色 **/
+
+html.div-color div {
+    background-color: RGBA(77, 67, 152, 0.1) !important;
+    color: RGBA(180, 134, 107, 1.00) !important;
+}
+
+
+/** 设置并清除所有元素的背景色 **/
+
+html.background-color-clear * {
+    background-color: RGBA(255, 0, 0, 0.0) !important;
+}
