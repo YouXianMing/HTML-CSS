@@ -1,0 +1,37 @@
+div#type-1 {
+    position: relative;
+    height: 200px;
+}
+
+div#type-1-child {
+    position: absolute;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    height: 120px;
+    top: 50%;
+    margin-top: -60px;
+}
+
+div#type-2 {
+    height: 200px;
+}
+
+div#type-2-child {
+    position: relative;
+    width: 300px;
+    height: 120px;
+    margin: 0 auto;
+    /* top --> (200px - 120px) / 2 = 40px */
+    top: 40px;
+}
+
+div#type-3 {
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+span#type-3-child {
+    line-height: 200px;
+}
