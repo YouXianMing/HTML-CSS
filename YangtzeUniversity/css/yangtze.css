@@ -1,0 +1,435 @@
+/* 基本设置 */
+
+body {
+    font-size: 14px;
+}
+
+div#content {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+div#title-img {
+    height: 148px;
+    background-image: url(../images/9k.jpg);
+    overflow: hidden;
+}
+
+div.space-h4 {
+    height: 4px;
+}
+
+div.space-h8 {
+    height: 8px;
+}
+
+
+/* 标题菜单部分设置 */
+
+div#title-menu {
+    display: table;
+    height: 40px;
+    background-color: white;
+}
+
+div#title-menu>div {
+    display: table-cell;
+    box-sizing: border-box;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+    background-image: url(../images/nav_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+div#title-menu>div:last-child {
+    background-image: none;
+}
+
+.title-menu-child-div-normal {
+    color: black;
+}
+
+.title-menu-child-div-special {
+    color: red;
+}
+
+div#title-menu-hover {
+    display: table;
+    height: 3px;
+}
+
+div#title-menu-hover>div {
+    position: relative;
+    top: -3px;
+    display: table-cell;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.title-menu-hover-normal {
+    background-image: none;
+}
+
+.title-menu-hover-special {
+    background-image: url(../images/h2_hover.jpg);
+}
+
+
+/* 动态菜单部分 */
+
+div#unav {
+    position: relative;
+    height: 40px;
+    background-color: white;
+    background-image: url(../images/unav_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    line-height: 40px;
+    text-indent: 30px;
+}
+
+div#unav>ol {
+    position: absolute;
+    left: 70px;
+    display: block;
+    height: 40px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: aliceblue;
+    text-indent: 0px;
+}
+
+div#unav>span#date {
+    position: absolute;
+    text-indent: 3px;
+}
+
+div#unav>ol>li {
+    display: inline-block;
+    line-height: 30px;
+    margin: 5px 5px;
+    padding: 0px 8px;
+    background-color: RGBA(73, 114, 193, 1.00);
+    border-radius: 9px;
+}
+
+div#unav>ol>li>a {
+    color: white;
+}
+
+
+/* 中间设置 */
+
+div#center {
+    display: table;
+    height: 500px;
+    width: 1000px;
+    background-color: RGBA(240, 240, 240, 1.00);
+}
+
+div#center-left {
+    display: table-cell;
+    width: 295px;
+    vertical-align: top;
+}
+
+div#scroll {
+    position: relative;
+    width: 290px;
+    height: 206px;
+    background-color: white;
+}
+
+div#scroll-word {
+    position: absolute;
+    height: 26px;
+    width: 290px;
+    bottom: 0px;
+    background-color: RGBA(222, 222, 222, 1.00);
+    text-align: center;
+    line-height: 26px;
+    color: black;
+}
+
+div#scroll-image {
+    box-sizing: border-box;
+    position: absolute;
+    height: 180px;
+    width: 290px;
+    top: 0px;
+    border-width: 1px;
+    border-style: solid;
+    background-image: url(../images/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+div#scroll-page {
+    position: absolute;
+    height: 19px;
+    width: 290px;
+    bottom: 26px;
+    background-color: RGBA(0, 0, 0, 0.5);
+}
+
+div#scroll-page>ol {
+    height: 19px;
+    float: right;
+    vertical-align: top;
+}
+
+div#scroll-page>ol>li {
+    box-sizing: border-box;
+    display: inline-block;
+    color: white;
+    width: 27px;
+    font-weight: 300;
+    font-size: 0.75rem;
+    text-align: center;
+    border-left-color: white;
+    border-left-style: solid;
+    border-left-width: thin;
+    background-image: url(../images/btn-red.gif);
+    background-repeat: no-repeat;
+    padding-top: 3px;
+}
+
+h2.title {
+    position: relative;
+    height: 30px;
+    width: 290px;
+    line-height: 30px;
+    text-indent: 10px;
+    color: white;
+    font-weight: 500;
+    background-image: url(../images/col1_h2.jpg);
+}
+
+h2.title>a {
+    font-weight: 400;
+    color: aliceblue;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+}
+
+h2.title-ver2 {
+    height: 30px;
+    line-height: 30px;
+    text-indent: 10px;
+    font-weight: 500;
+    color: white;
+    background-image: url(../images/col3_h2.jpg);
+}
+
+h2.title-ver2>span.small {
+    font-size: 0.6rem;
+}
+
+ol#tech-info {
+    width: 290px;
+}
+
+ol#tech-info>li:nth-child(2n) {
+    background-color: RGBA(255, 255, 255, 1.00);
+}
+
+ol#tech-info>li {
+    line-height: 35px;
+    text-indent: 20px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    font-size: 0.85rem;
+    background-image: url(../images/li_bg.jpg);
+}
+
+div#input {
+    width: 290px;
+    height: 100px;
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: thin;
+    box-sizing: border-box;
+    margin: 0 0 5px 0;
+}
+
+div#center-center {
+    display: table-cell;
+    width: 480px;
+    vertical-align: top;
+}
+
+div#center-content {
+    position: relative;
+    left: 3px;
+    width: 475px;
+}
+
+ol.center-list>li {
+    box-sizing: border-box;
+    text-indent: 20px;
+    line-height: 30px;
+    height: 30px;
+    font-size: 0.85rem;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-image: url(../images/list_bg1.gif);
+    border-bottom-style: dashed;
+    border-bottom-width: thin;
+}
+
+ol.center-list>li:last-child {
+    color: red;
+    border-bottom-style: none;
+}
+
+ol.center-list>li>span {
+    display: inline-block;
+    position: absolute;
+    right: 8px;
+}
+
+div.white {
+    height: 270px;
+    background-color: white;
+}
+
+div#center-right {
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+}
+
+div#right-content {
+    width: 214px;
+    position: absolute;
+    right: 0px;
+}
+
+div#right-login {
+    text-align: center;
+}
+
+div#right-login>a {
+    font-size: 1.0rem;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    background-color: RGBA(73, 114, 193, 1.00);
+    margin: 60px 65px 20px 65px;
+    color: white;
+    border-radius: 10px;
+}
+
+div#right-login>p {
+    font-size: 0.5rem;
+    margin-bottom: 30px;
+}
+
+h2.chooseTab {
+    height: 32px;
+    box-sizing: border-box;
+    line-height: 32px;
+    background-color: white;
+    background-image: url(../images/h2_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 101px;
+    border-bottom-color: red;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+h2.chooseTab>span {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0 20px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    box-sizing: border-box;
+}
+
+h2.chooseTab>span.normal {
+    background-image: none;
+}
+
+h2.chooseTab>span.select {
+    background-image: url(../images/h2_hover.jpg);
+}
+
+ol#special-web>a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 40px;
+    margin: 2px;
+    background-color: RGBA(252, 252, 245, 1.00);
+    border-color: RGBA(204, 204, 204, 1.00);
+    border-style: solid;
+    border-width: thin;
+    font-weight: 500;
+    background-repeat: no-repeat;
+    background-position: 7px;
+}
+
+div#code {
+    margin-top: 5px;
+    vertical-align: middle;
+    height: 115px;
+    background-image: url(../images/code.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+/* 快速通道 */
+
+ol#quick {
+    height: 38px;
+    background-color: white;
+}
+
+ol#quick>li {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 38px;
+    text-indent: 25px;
+    width: 111px;
+    background-repeat: no-repeat;
+    background-position: 2px;
+}
+
+ol#quick>li>a {
+    color: black;
+}
+
+
+/* 底栏 */
+
+div#bottom {
+    position: relative;
+    height: 50px;
+    background-color: RGBA(204, 204, 204, 1.00);
+}
+
+div#bottom-content {
+    position: absolute;
+    width: 1000px;
+    height: 50px;
+    box-sizing: border-box;
+    left: 50%;
+    margin-left: -500px;
+    line-height: 50px;
+}
+
+div#bottom-content>span {
+    display: inline-block;
+    margin-right: 30px;
+}
